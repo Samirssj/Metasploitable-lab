@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050907">
+  <title>ROOT//LAB — Metasploitable educativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">⌁</span><div><b>ROOT<span>//</span>LAB</b><small>CYBER RANGE EDUCATIVO</small></div></div>
+      <div class="side-label">LABORATORIO</div>
+      <nav id="stageNav" aria-label="Etapas del laboratorio"></nav>
+      <div class="side-note"><span class="live-dot"></span> MODO SIMULACIÓN<br><small>No se envían paquetes reales.</small></div>
+      <div class="side-footer">EDU BUILD 1.0.0<br>USO RESPONSABLE</div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><span class="crumb">LABORATORIOS</span><span class="slash"> / </span><span id="topStage">01 · RED DE LABORATORIO</span></div>
+        <div class="top-status"><span class="live-dot"></span> SISTEMA EN LÍNEA</div>
+      </header>
+      <section class="hero">
+        <div class="eyebrow"><span class="tiny-square"></span> METASPLOITABLE · RUTA GUIADA</div>
+        <h1>Aprende. <span>Explora.</span><br>Comprende el riesgo.</h1>
+        <p>Un recorrido interactivo por un laboratorio de ciberseguridad aislado. Practica conceptos con una terminal ficticia y resultados preparados para aprender sin atacar sistemas reales.</p>
+        <div class="hero-tags"><span>▣ 7 ETAPAS</span><span>⌘ TERMINAL SIMULADA</span><span>◈ NIVEL INICIAL</span></div>
+      </section>
+      <section class="workspace">
+        <div class="lesson">
+          <div class="lesson-head"><span class="step-kicker" id="stepKicker">ETAPA 01 / 07</span><span class="pill">GUÍA EDUCATIVA</span></div>
+          <h2 id="lessonTitle">Preparar la red de laboratorio</h2>
+          <p id="lessonText"></p>
+          <div class="objective"><div class="obj-icon">◎</div><div><b>OBJETIVO DE APRENDIZAJE</b><p id="objectiveText"></p></div></div>
+          <h3>Conceptos clave</h3>
+          <div class="concepts" id="concepts"></div>
+          <div class="lesson-actions"><button class="secondary" id="prevBtn">← Anterior</button><button class="primary" id="nextBtn">Siguiente etapa →</button></div>
+        </div>
+        <div class="terminal-panel">
+          <div class="terminal-title"><div class="window-dots"><i></i><i></i><i></i></div><span>kali@rootlab: ~</span><span class="terminal-lock">SIMULADA</span></div>
+          <div class="terminal-banner">ROOT//LAB <span>INTERACTIVE CONSOLE</span><br><small>Escribe <b>help</b> para ver comandos disponibles.</small></div>
+          <div id="output" class="output" role="log" aria-live="polite"><div class="line muted">Sesión educativa iniciada.</div><div class="line muted">Esta consola no ejecuta comandos del sistema operativo.</div></div>
+          <form id="commandForm" class="command-form">
+            <label for="commandInput"><span class="prompt">kali@rootlab</span>:<span class="path">~</span>$</label>
+            <input id="commandInput" autocomplete="off" spellcheck="false" placeholder="escribe un comando..." aria-label="Comando simulado">
+            <button type="submit" aria-label="Ejecutar comando">↵</button>
+          </form>
+          <div class="terminal-bottom"><span><i class="live-dot"></i> CONEXIÓN LOCAL FICTICIA</span><button id="clearBtn">LIMPIAR</button></div>
+        </div>
+      </section>
+      <section class="bottom-grid">
+        <div class="mini-card"><div class="mini-icon">01</div><div><b>Entorno aislado</b><p>VirtualBox · Kali/Parrot · Metasploitable</p></div></div>
+        <div class="mini-card"><div class="mini-icon">02</div><div><b>Aprendizaje responsable</b><p>Solo ejemplos ficticios y sistemas autorizados</p></div></div>
+        <div class="mini-card"><div class="mini-icon">03</div><div><b>Defensa primero</b><p>Identifica riesgos y medidas de mitigación</p></div></div>
+      </section>
+      <footer>ROOT//LAB <span>·</span> Material educativo inspirado en “RESOLVIENDO - METASPLOITABLE”. No sustituye un laboratorio real autorizado.</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
